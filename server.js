@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
-// Load environment variables from config.env
 dotenv.config({ path: "./config.env" });
 
 process.on("uncaughtException", (err) => {

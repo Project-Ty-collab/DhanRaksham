@@ -7,19 +7,16 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.pipeline import Pipeline
 import joblib
 
-# Load and prepare data
 def load_data():
     df = pd.read_csv('insurance.csv')
     
-    # Feature engineering
     df['age_bmi'] = df['age'] * df['bmi']
     df['smoker_age'] = df['smoker'].map({'yes':1, 'no':0}) * df['age']
     
     X = df.drop('charges', axis=1)
-    y = np.log1p(df['charges'])  # Log transform for skewed target
+    y = np.log1p(df['charges'])
     return X, y
 
-# Create preprocessing pipeline
 def build_preprocessor():
     categorical_cols = ['sex', 'smoker', 'region']
     return ColumnTransformer(
@@ -29,7 +26,6 @@ def build_preprocessor():
         remainder='passthrough'
     )
 
-# Train model
 def train_model(X, y):
     preprocessor = build_preprocessor()
     
@@ -51,7 +47,6 @@ def train_model(X, y):
     pipeline.fit(X, y)
     return pipeline
 
-# Main execution
 if __name__ == '__main__':
     print("Loading data...")
     X, y = load_data()
