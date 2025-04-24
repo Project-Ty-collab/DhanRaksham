@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css'; // Ensure you have the relevant styles here
-import assets from "./assets";
 
 
 export const Home = () => {
@@ -16,7 +15,6 @@ export const Home = () => {
             <button className="btn">Explore Now</button>
           </div>
           <div className="hero-image">
-          <img src={assets.heroImage} alt="Finance management illustration" width="100%" height="100%" />
 
           </div>
         </div>
