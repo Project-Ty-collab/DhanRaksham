@@ -1,8 +1,18 @@
 import React from 'react';
 import './Header.css';
 import logo from '../assets/logo.png';
+import { useNavigate } from 'react-router';
 
 export const Header = () => {
+  const navigate = useNavigate();
+
+  const handleSignInClick = () => {
+    navigate('/signin');
+  };
+
+  const handleSignUpClick = () => {
+    navigate('/signup');
+  };
   return (
     <div>
       <nav>
