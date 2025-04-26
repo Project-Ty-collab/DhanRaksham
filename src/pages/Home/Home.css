@@ -16,6 +16,76 @@
     padding: 0 20px;
   }
 
+  nav {
+    background-color: #0d2b45;
+    height: 80px; 
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+  }
+  
+  .logo-img {
+    max-height: 60px; /* Now logo won't exceed the navbar */
+    height: auto;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .logo span {
+    color: #4c9aff;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-links li {
+    margin-left: 30px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #4c9aff;
+  }
+
+  .btn {
+    background-color: #4c9aff;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #3a7dcc;
+  }
+
 .hero {
     padding: 100px 0;
     background: linear-gradient(to right, #f8f9fa, #e9f2ff);

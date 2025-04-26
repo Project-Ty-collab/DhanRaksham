@@ -1,0 +1,103 @@
+/* Base section styling */
+.stock-section {
+    background-color: #ffffff;
+    padding: 0px 0px;
+  }
+  
+  /* Container alignment */
+  .stock-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  /* Titles and subtitles */
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  /* Labels */
+  .stock-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 20px;
+    color: #444;
+  }
+  
+  /* Inputs and select */
+  .stock-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  /* Remove up/down arrows from the number input */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Focus styles for inputs */
+  .stock-input:focus {
+    outline: none;
+    border-color: #3e92cc;
+    background-color: #fff;
+  }
+  
+  /* Prediction output */
+  .stock-prediction {
+    margin-top: 30px;
+    background-color: #f1f8ff;
+    padding: 15px 20px;
+    border-left: 4px solid #3e92cc;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  .stock-prediction strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Predict Button */
+  .stock-button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 12px 24px;
+    background-color: #3e92cc;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Button hover effect */
+  .stock-button:hover {
+    background-color: #16437b;
+  }
+  
