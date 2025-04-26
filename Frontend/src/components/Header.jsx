@@ -1,4 +1,4 @@
-import React from '../../client/node_modules/@types/react'
+import React from 'react'
 import { Navigate, useNavigate } from 'react-router-dom';
 import './Header.css'
 

@@ -1,4 +1,4 @@
-import React from '../../client/node_modules/@types/react'
+import React from 'react'
 import './Footer.css'
 
 const Footer = () => {
