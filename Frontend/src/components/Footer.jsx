@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Contact Us</h4>
           <ul>
-            <li><a href="#">info@financehub.com</a></li>
+            <li><a href="#">info@dhanraksham.com</a></li>
             <li><a href="#">+1 800 555 0123</a></li>
             <li><a href="#">500 Financial Ave, Suite 400</a></li>
             <li><a href="#">New York, NY 10001</a></li>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        © 2025 FinanceHub. All rights reserved.
+        © 2025 DhanRaksham. All rights reserved.
       </div>
     </div>
   </footer>

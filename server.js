@@ -11,7 +11,12 @@ process.on("uncaughtException", (err) => {
   process.exit(1);
 });
 
+// Require app AFTER dotenv, BEFORE using any routes
 const app = require("./app");
+
+// NOW load routes
+const authRoutes = require('./routes/auth');
+app.use('/api/auth', authRoutes);
 
 const portnumber = 3001;
 const server = app.listen(portnumber, () => {

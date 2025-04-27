@@ -1,21 +1,39 @@
 import React from 'react';
 import './Home.css'; // Ensure you have the relevant styles here
-
-
+import logo from "../../assets/logo.png";
 export const Home = () => {
   return (
+    
     <div>
+      <nav>
+        <div className="container nav-container">
+        <div className="logo">
+          <img src={logo} alt="Logo" className="logo-img" />DhanRaksham</div>
+          <ul className="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#market">Markets</a></li>
+            <li><a href="#insurance">Insurance</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div className="twobtn">
+            <button className="btn">Sign in</button>
+            <button className="btn">Sign up</button>
+          </div>
+        </div>
+      </nav>
+      
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="container">
           <div className="hero-content">
             <h1>Manage Your Finances Like Never Before</h1>
-            <p>FinanceHub provides you with all the tools you need to track investments, compare insurance plans, and secure
+            <p>DhanRaksham provides you with all the tools you need to track investments, compare insurance plans, and secure
               your financial future. Join millions of satisfied users today.</p>
             <button className="btn">Explore Now</button>
           </div>
           <div className="hero-image">
-
           </div>
         </div>
       </section>
