@@ -16,35 +16,134 @@
     padding: 0 20px;
   }
 
-.hero {
+  nav {
+    background-color: #0d2b45;
+    height: 80px; 
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+  }
+  
+  .logo-img {
+    height: 80px; 
+    width: auto; 
+    object-fit: contain;
+
+  }
+  
+  .logo span {
+    color: #4c9aff;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-links li {
+    margin-left: 30px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #4c9aff;
+  }
+
+  .btn {
+    background-color: #4c9aff;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #3a7dcc;
+  }
+
+  .hero {
     padding: 100px 0;
-    background: linear-gradient(to right, #f8f9fa, #e9f2ff);
     position: relative;
     overflow: hidden;
+    z-index: 1;
+    background-color: #0d2b45;
+    animation: zoonIn 1s ease-out forwards;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../../assets/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; 
+    z-index: -1;
+   
   }
 
   .hero-content {
     width: 50%;
     position: relative;
     z-index: 1;
+
+ 
+  }
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .hero h1 {
     font-size: 48px;
-    color: #0d2b45;
+    color: #ffffff;
+    opacity: ;
     margin-bottom: 20px;
+  
   }
 
   .hero p {
+  
     font-size: 18px;
-    color: #555;
+    color: #ffffff9b;
     margin-bottom: 30px;
+   
     line-height: 1.6;
   }
 
 
 .hero-image img {
-    animation: zoomIn 1s ease-out forwards;
     width: 100%;
     height: 100%;
   }
@@ -227,9 +326,26 @@
 
   .call-to-action {
     padding: 6rem 5%;
-    background-color: navy;
+    background-color: #020b14;
     color: white;
     text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #010026;
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+
+  .call-to-action::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../../assets/call-to-action.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; 
+    z-index: -1;
+   
   }
 
   .cta-title {
